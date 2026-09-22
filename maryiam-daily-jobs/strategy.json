@@ -73,7 +73,7 @@
       "relocation required"
     ],
     "preferredSectors": ["healthcare", "consulting", "government", "saas", "digital delivery"],
-    "dailyBatchSize": 5,
+    "dailyBatchSize": 20,
     "weeklyApplyTarget": 8,
     "totalApplyTarget": 25
   },

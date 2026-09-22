@@ -531,7 +531,7 @@ def build_daily_batch(strategy: dict, force: bool = False) -> dict:
     done = applied_ids(apps)
     all_jobs = collect_jobs(strategy, force=force)
     available = [j for j in all_jobs if j["id"] not in done]
-    size = int(strategy["search"].get("dailyBatchSize", 5))
+    size = int(strategy["search"].get("dailyBatchSize", 20))
     # Diversify across boards (Indeed/Dice/LinkedIn/Monster/CareerBuilder)
     by_board: dict[str, list] = {}
     for j in available:
